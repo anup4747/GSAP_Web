@@ -1,8 +1,8 @@
 import "./App.css";
 import { Routes, Route, NavLink, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
-import { ReactNode } from "react";
-
+import type { ReactNode } from "react";
+// With "verbatimModuleSyntax": true, TypeScript keeps your import exactly as written in the compiled JavaScript. So importing types with normal import may break runtime unless you use import type, which gets erased at compile time
 import Home from "./pages/home";
 import About from "./pages/about";
 
