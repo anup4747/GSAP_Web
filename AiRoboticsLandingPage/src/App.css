@@ -17,9 +17,17 @@
   animation: gradient 5s ease infinite;
 }
 
-.bg-300\\% {
-  background-size: 300% 300%;
+h1{
+  letter-spacing: .1rem;
+  .heading-wrap{
+    overflow: hidden;
+    height: 66px;
+  }
 }
+
+/* .bg-300{
+  background-size: 300% 300%;
+} */
 
 .bg-gradient-radial {
   background-image: radial-gradient(circle at center, var(--tw-gradient-stops));

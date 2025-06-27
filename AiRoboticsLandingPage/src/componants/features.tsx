@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 
-
 export default function Features() {
   return (
     <section className="py-32 px-6">

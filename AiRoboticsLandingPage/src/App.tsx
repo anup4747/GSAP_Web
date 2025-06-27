@@ -1,25 +1,22 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
+import { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 import "./App.css"
 import Hero from './componants/hero';
 import CtaSection from './componants/ctaSection';
 import Features from './componants/features';
 import Header from './componants/header';
 
-// Since GSAP isn't available as an ES module in this environment, we'll simulate its effects with Framer Motion
-// In a real project, you'd import: import gsap from 'gsap';
+interface MousePosition {
+  x: number;
+  y: number;
+}
 
 const AiRoboticsLanding = () => {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [mousePosition, setMousePosition] = useState<MousePosition>({ x: 0, y: 0 });
   const [isLoading, setIsLoading] = useState(true);
-  const heroRef = useRef(null);
-  const { scrollYProgress } = useScroll();
-  
-  const backgroundY = useTransform(scrollYProgress, [0, 1], ['0%', '100%']);
-  const textY = useTransform(scrollYProgress, [0, 1], ['0%', '200%']);
 
   useEffect(() => {
-    const handleMouseMove = (e) => {
+    const handleMouseMove = (e: MouseEvent) => {
       setMousePosition({ x: e.clientX, y: e.clientY });
     };
 
@@ -28,44 +25,9 @@ const AiRoboticsLanding = () => {
     // Simulate loading
     setTimeout(() => setIsLoading(false), 2000);
 
-    return () => window.removeEventListener('mousemove', handleMouseMove);
+    return () => window.removeEventListener('mousemove', handleMouseMove); 
   }, []);
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.3,
-        delayChildren: 0.2
-      }
-    }
-  };
-
-  const itemVariants = {
-    hidden: { y: 50, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        type: "spring",
-        stiffness: 100,
-        damping: 12
-      }
-    }
-  };
-
-  const glowVariants = {
-    animate: {
-      scale: [1, 1.2, 1],
-      opacity: [0.3, 0.6, 0.3],
-      transition: {
-        duration: 3,
-        repeat: Infinity,
-        ease: "easeInOut"
-      }
-    }
-  };
 
   if (isLoading) {
     return (
@@ -79,11 +41,11 @@ const AiRoboticsLanding = () => {
           <motion.span
             animate={{ rotate: 360 }}
             transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
-            className="inline-block mr-4"
+            className="mr-4"
           >
             ⚡
           </motion.span>
-          NeuraBots
+          NeuraBots 
         </motion.div>
       </div>
     );
@@ -106,13 +68,6 @@ const AiRoboticsLanding = () => {
       <Features/>
       <CtaSection/>
 
-    
-
- 
-      
-      <style jsx>{`
-      
-      `}</style>
     </div>
   );
 };
