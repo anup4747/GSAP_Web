@@ -37,35 +37,30 @@ const About: React.FC<AboutProps> = ({ linkClasses }) => {
 
       <div className="overflow-hidden">
         <div>
-          <p ref={infoRef} className="text-sm font-mono leading-relaxed">
-            Hey! I'm Christian. I work on the lifecycle marketing team at{" "}
-            <a
-              href="https://www.google.com/"
-              target="_blank"
-              className={`underline transition-colors ${linkClasses}`}
-            >
-              GitLab
-            </a>
-            , helping prospects convert faster with smarter messaging and
-            cleaner automation. I've previously worked with B2B teams at
-            companies like{" "}
-            <a
-              href="https://www.google.com/"
-              target="_blank"
-              className={`underline transition-colors ${linkClasses}`}
-            >
-              Docebo
-            </a>{" "}
-            and{" "}
-            <a
-              href="https://www.google.com/"
-              target="_blank"
-              className={`underline transition-colors ${linkClasses}`}
-            >
-              Bold Commerce
-            </a>{" "}
-            to clean up data, fix broken flows, and make email suck less.
-          </p>
+          <div>
+            <p ref={infoRef} className="text-sm font-mono leading-relaxed">
+              Hey! I'm Anup, passionate about building products. I've worked on
+              some{" "}
+              <a
+                href="https://www.google.com/"
+                target="_blank"
+                className={`underline transition-colors ${linkClasses}`}
+              >
+                freelance
+              </a>{" "}
+              projects in decentralized systems and server-side development.
+              Through internships and hackathons, I’ve designed user-focused
+              interfaces and optimized workflows. I’ve also done some{" "}
+              <a
+                href="https://www.google.com/"
+                target="_blank"
+                className={`underline transition-colors ${linkClasses}`}
+              >
+                open-source
+              </a>{" "}
+              on Web3 and Backend projects.
+            </p>
+          </div>
         </div>
       </div>
     </div>

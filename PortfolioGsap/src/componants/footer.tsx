@@ -2,6 +2,7 @@ import type React from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
+import { FiCoffee } from "react-icons/fi";
 
 gsap.registerPlugin(useGSAP);
 
@@ -20,16 +21,18 @@ const Footer: React.FC<FooterProps> = ({ isDark }) => {
     );
   });
 
+  const currentYear = new Date().getFullYear();
+
   return (
     <div className="overflow-hidden">
       <div>
         <div
           ref={titleRef}
-          className={`text-center text-xs font-mono ${
+          className={`flex w-full justify-center text-xs font-mono ${
             isDark ? "text-gray-500" : "text-gray-400"
           }`}
         >
-          © 2025 - Built with Wix. Typeset in SF Pro.
+          ©{currentYear} Anup - Crafted with <FiCoffee className="mx-2"/>  and code. Debugged in Inter.
         </div>
       </div>
     </div>

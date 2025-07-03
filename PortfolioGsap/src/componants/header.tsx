@@ -48,7 +48,7 @@ const Header: React.FC<HeaderProps> = ({ isDark }) => {
           isDark ? "text-gray-400" : "text-gray-600"
         }`}
       >
-        Full Stack Developer | Musician | Video Editor
+        Full Stack Developer | Musician | Freelancer
       </p>
     </div>
   );

@@ -30,7 +30,7 @@ const Contact: React.FC<ContactProps> = ({ linkClasses }) => {
   }); // <-- scope for selector text (optional)s
 
   return (
-    <div className="mb-5">
+    <div className="mb-3">
       <div className="overflow-hidden inline-block">
         <div>
           <div ref={titleRef} className="flex items-center space-x-2 mb-3">
