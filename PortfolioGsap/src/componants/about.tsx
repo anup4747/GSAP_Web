@@ -48,7 +48,7 @@ const About: React.FC<AboutProps> = ({ linkClasses }) => {
               >
                 freelance
               </a>{" "}
-              projects in decentralized systems and server-side development.
+              projects in server-side development and server-side development.
               Through internships and hackathons, I’ve designed user-focused
               interfaces and optimized workflows. I’ve also done some{" "}
               <a
@@ -58,7 +58,7 @@ const About: React.FC<AboutProps> = ({ linkClasses }) => {
               >
                 open-source
               </a>{" "}
-              on Web3 and Backend projects.
+              on Backend projects and  Web3.
             </p>
           </div>
         </div>

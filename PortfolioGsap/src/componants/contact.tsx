@@ -15,7 +15,7 @@ const Contact: React.FC<ContactProps> = ({ linkClasses }) => {
   const nameRef=  useRef<HTMLParagraphElement | null>(null);
 
   useGSAP(() => {
-    // use selectors...
+    // use selectors...1
     gsap.fromTo(titleRef.current, { y: 30 }, { y: 0, duration: 1, delay: 2.0 });
     gsap.fromTo(
       infoRef.current,
@@ -27,7 +27,7 @@ const Contact: React.FC<ContactProps> = ({ linkClasses }) => {
       { y: 10, opacity: 0 },
       { opacity: 1, y: 0, duration: 1.5, delay: 2.4 }
     );
-  }); // <-- scope for selector text (optional)s
+  }); 
 
   return (
     <div className="mb-3">

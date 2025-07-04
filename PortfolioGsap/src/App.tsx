@@ -24,7 +24,6 @@ const Portfolio: React.FC = () => {
 
 
   useGSAP(() => {
-    gsap.to(".box", { rotation: "+=360", duration: 3 });
     gsap.fromTo(
       containerRef.current,
       { opacity: 0, y:-20 },
@@ -53,11 +52,11 @@ const Portfolio: React.FC = () => {
   };
 
   const themeClasses = isDark
-    ? "bg-gray-900 text-gray-100"
+    ? "bg-[#1a1b1e] text-gray-100"
     : "bg-gray-50 text-gray-900";
 
   const cardClasses = isDark
-    ? "bg-gray-800 border-gray-700"
+    ? "bg-[#222327] border-gray-700"
     : "bg-white border-gray-200";
 
   const linkClasses = isDark
@@ -70,14 +69,13 @@ const Portfolio: React.FC = () => {
 
   return (
     <div 
-      className={`flex items-center select-none justify-center p-4 transition-colors duration-300 max-h-full ${themeClasses}`}
+      className={`flex items-center select-none justify-center p-5 transition-colors duration-300 max-h-full ${themeClasses}`}
     >
       <div
       ref={containerRef}
-        className={`w-full max-w-lg rounded-3xl p-8 shadow-2xl border transition-all ${cardClasses}`}
+        className={`w-full max-w-2/7 rounded-3xl pt-7 pb-7 pr-8 pl-8 shadow-2xl border transition-all ${cardClasses}`}
       >
-        {/* Theme Toggle */}
-        <div className="flex justify-end mb-4">
+        <div className="flex justify-end mb-3">
           <button
             ref={themeButtonRef}
             onClick={toggleTheme}

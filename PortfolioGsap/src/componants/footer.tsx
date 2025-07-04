@@ -32,7 +32,7 @@ const Footer: React.FC<FooterProps> = ({ isDark }) => {
             isDark ? "text-gray-500" : "text-gray-400"
           }`}
         >
-          ©{currentYear} Anup - Crafted with <FiCoffee className="mx-2"/>  and code. Debugged in Inter.
+          © {currentYear} Anup - Crafted with <FiCoffee className="mx-2"/>  and code. Debugged in Inter.
         </div>
       </div>
     </div>
