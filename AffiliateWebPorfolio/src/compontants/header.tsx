@@ -33,12 +33,10 @@ const Header: React.FC = () => {
 
       <div
         onClick={toggleMenu}
-        className="hover:cursor-pointer flex gap-4 justify-center items-center border pr-6 pl-6 pt-2.5 pb-2.5 rounded-full mr-10"
+        className="hover:cursor-pointer hover:bg-[#d9f505] duration-100 transition-all flex justify-center items-center border pr-6 pl-6 pt-2.5 pb-2.5 rounded-full mr-10"
       >
         <div className="text-xl">Menu</div>
-        <div>
-          <RiMenu3Fill />
-        </div>
+        
       </div>
 
       {isMenuOpen && (
