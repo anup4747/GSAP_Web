@@ -1,9 +1,8 @@
 @import "tailwindcss";
 
-body{
-    background-color: #ffffff;
+body {
+  background-color: #ffffff;
 }
-
 
 @keyframes scroll-right {
   0% {
@@ -16,4 +15,24 @@ body{
 
 .animate-scroll-right {
   animation: scroll-right 10s linear infinite;
+}
+
+.hero-font {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  letter-spacing: 0cap;
+}
+
+.info-heading {
+  font-family: "Red Rose", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.paragraph{
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }

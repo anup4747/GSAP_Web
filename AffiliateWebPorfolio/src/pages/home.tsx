@@ -9,7 +9,9 @@ const Home: React.FC = () => {
   useGSAP(() => {
     gsap.to(".box", { rotation: "+=360", duration: 3 });
   }, []);
-  return <div>Home</div>;
+  return <div>
+    <Hero/>
+  </div>;
 };
 
 export default Home;
