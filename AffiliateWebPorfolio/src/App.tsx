@@ -1,6 +1,5 @@
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import { motion } from "framer-motion";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import ScrollingStrip from "./compontants/scrollingStrip";
