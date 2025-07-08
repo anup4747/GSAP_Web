@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
           </p>
         </div>
         <div className="mt-8">
-          <button className="pr-6 pt-2 pb-2 pl-6 border text-xl bg-[#d9f505] hover:bg-black hover:text-yellow-200 hover:cursor-pointer border-black rounded-4xl duration-300 transition">
+          <button className="pr-6 pt-2 pb-2 pl-6 border text-xl bg-[#d9f505] hover:bg-black hover:text-yellow-200 hover:cursor-pointer border-black rounded-4xl duration-300 transition paragraph">
             {" "}
             Start Today{" "}
           </button>

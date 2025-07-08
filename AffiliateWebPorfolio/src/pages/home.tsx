@@ -152,7 +152,7 @@ const Home: React.FC = () => {
               a great place for you to tell a story and let your users know a
               little more about you.
             </p>
-            <button className="pr-4 pt-2 pb-2 pl-4 mt-2 border bg-[#d9f505] hover:bg-black hover:text-yellow-200 hover:cursor-pointer border-black rounded-4xl transition duration-300 ">
+            <button className="paragraph pr-4 pt-2 pb-2 pl-4 mt-2 border bg-[#d9f505] hover:bg-black hover:text-yellow-200 hover:cursor-pointer border-black rounded-4xl transition duration-300 ">
               {" "}
               Learn More
             </button>
@@ -167,7 +167,7 @@ const Home: React.FC = () => {
               a great place for you to tell a story and let your users know a
               little more about you.
             </p>
-            <button className="pr-4 pt-2 pb-2 pl-4 mt-2 border bg-[#d9f505] hover:bg-black hover:text-yellow-200 hover:cursor-pointer border-black rounded-4xl transition duration-300 ">
+            <button className="paragraph pr-4 pt-2 pb-2 pl-4 mt-2 border bg-[#d9f505] hover:bg-black hover:text-yellow-200 hover:cursor-pointer border-black rounded-4xl transition duration-300 ">
               {" "}
               Learn More
             </button>

@@ -19,19 +19,19 @@ const Footer: React.FC = () => {
     <footer className="w-full bg-black text-white px-10 py-18 flex flex-row items-center justify-center">
       <div className="flex flex-col items-center max-w-[2000px] ">
         <div className="">
-          <h1 className="text-4xl text-center font-bold text-[#daf700] ">
+          <h1 className="text-4xl text-center font-bold text-[#daf700] hero-font">
             Want to partner with us?
           </h1>
         </div>
         <div>
-          <p className="text-center mt-10">
+          <p className="text-center mt-10 paragraph">
             If you're interested in our partnership and would like to find out
             some more information, <br /> one of our advisors is excited to
             help.{" "}
           </p>
         </div>
         <div>
-          <button className="mt-10 bg-[#daf700] hover:bg-yellow-200 rounded-4xl text-black px-6 py-3 transition duration-300">
+          <button className="mt-10 bg-[#daf700] hover:bg-yellow-200 rounded-4xl text-black px-6 py-3 transition duration-300 paragraph">
             Get Started
           </button>
         </div>

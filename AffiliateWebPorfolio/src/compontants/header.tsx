@@ -37,7 +37,7 @@ const Header: React.FC = () => {
         onClick={toggleMenu}
         className="hover:cursor-pointer hover:bg-[#d9f505] flex justify-center items-center border pr-6 pl-6 pt-2.5 pb-2.5 rounded-full mr-10 transition duration-300"
       >
-        <div className="text-xl">Menu</div>
+        <div className="text-xl paragraph">Menu</div>
         
       </div>
 

@@ -102,10 +102,9 @@ const About: React.FC = () => {
 
     </div>
       <div className="flex px-20 py-24 ">
-      <div className="w-1/2 flex items-center">
+      <div className="w-1/2 flex flex-col">
         <h1 className="leading-tight hero-font text-6xl ">
           Team</h1>
-
           <p className="mt-4 paragraph text-lg w-lg">This is your Team section introductory paragraph. Utilize this space to introduce your team and what makes it so special, such as your culture and work philosophy. Don’t be afraid to illustrate personality and character to help users connect with your team.</p>
       </div>
 

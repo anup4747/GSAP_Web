@@ -97,7 +97,7 @@ const Advertiser: React.FC = () => {
           </div>
         </div>
         <Link to="/contact">
-          <button className="bg-[#daf700] text-black hover:bg-black hover:text-[#daf700] px-4 py-2 border rounded-full transition duration-300">
+          <button className="bg-[#daf700] text-black hover:bg-black hover:text-[#daf700] px-4 py-2 border rounded-full transition duration-300 paragraph">
             {" "}
             Contact Us
           </button>
