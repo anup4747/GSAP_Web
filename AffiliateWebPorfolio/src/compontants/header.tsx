@@ -2,10 +2,10 @@ import type React from "react";
 import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import { motion } from "framer-motion";
-import { RiMenu3Fill, RiCloseLargeFill } from "react-icons/ri";
+import { RiCloseLargeFill } from "react-icons/ri";
 import { NavLink } from "react-router-dom";
-import { useState } from "react";
+import { useState } from "react"
+import { Link } from "react-router-dom";
 
 gsap.registerPlugin(useGSAP);
 
@@ -29,11 +29,13 @@ const Header: React.FC = () => {
 
   return (
     <header className="flex items-center justify-between p-4 text-black border-b-2 border-blue-200">
-      <div className="text-3xl font-bold ml-10">AffiliateX</div>
+      <div className="text-3xl font-bold ml-10 cursor-pointer">
+        <Link to="/">AffiliateX</Link>
+      </div>
 
       <div
         onClick={toggleMenu}
-        className="hover:cursor-pointer hover:bg-[#d9f505] duration-100 transition-all flex justify-center items-center border pr-6 pl-6 pt-2.5 pb-2.5 rounded-full mr-10"
+        className="hover:cursor-pointer hover:bg-[#d9f505] flex justify-center items-center border pr-6 pl-6 pt-2.5 pb-2.5 rounded-full mr-10 transition duration-300"
       >
         <div className="text-xl">Menu</div>
         
