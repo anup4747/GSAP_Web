@@ -7,38 +7,6 @@ import officeImg from "../assets/office4.jpg";
 
 gsap.registerPlugin(useGSAP);
 
-const profiles = [
-  {
-    name: "Daniel Carter",
-    title: "Founder & CEO",
-    description:
-      "Daniel is a seasoned entrepreneur with over 10 years of experience in affiliate marketing and digital strategy. He founded the company to empower individuals to achieve financial independence through effective marketing tools and strategies. His leadership and innovative approach have driven the company’s rapid growth.",
-    image: "https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg",
-  },
-  {
-    name: "Emily Rivera",
-    title: "Marketing Strategist",
-    description:
-      "Emily is the creative force behind the company’s campaigns. With a knack for identifying trends and crafting compelling content, she ensures affiliates have access to high-converting strategies. Emily’s passion lies in helping clients unlock their full earning potential.",
-    image: "https://images.pexels.com/photos/4567833/pexels-photo-4567833.jpeg",
-  },
-  {
-    name: "Jade Patel",
-    title: "Tech Lead",
-    description:
-      "Jade works closely with affiliates, offering personalized coaching and support. With a background in sales and performance marketing, she’s dedicated to ensuring every partner exceeds their goals. Her approachable nature and problem-solving skills make her a favorite among clients.",
-    image:
-      "https://images.pexels.com/photos/10110860/pexels-photo-10110860.jpeg",
-  },
-  {
-    name: "Sarah Lee",
-    title: "Tech Lead",
-    description:
-      "Sarah is the mastermind behind the company’s user-friendly platform. With a degree in software engineering and years of experience in developing digital tools, she ensures the technology is seamless and efficient for every affiliate to thrive.",
-    image: "https://images.pexels.com/photos/1559193/pexels-photo-1559193.jpeg",
-  },
-];
-
 const About: React.FC = () => {
   const heading11 = useRef<HTMLHeadingElement | null>(null);
   const aboutHead11 = useRef<HTMLHeadingElement | null>(null);
