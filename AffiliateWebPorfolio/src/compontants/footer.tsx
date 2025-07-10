@@ -1,20 +1,13 @@
 import type React from "react";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
 import { Link } from "react-router-dom";
 import { FaYoutube } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
 
-gsap.registerPlugin(useGSAP);
-
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
-  useGSAP(() => {
-    gsap.to(".box", { rotation: "+=360", duration: 3 });
-  }, []);
-  // return <footer className="w-full bg-[#daf700]">
+ 
   return (
     <footer className="w-full bg-black text-white px-10 py-18 flex flex-row items-center justify-center">
       <div className="flex flex-col items-center max-w-[2000px] ">
@@ -31,7 +24,7 @@ const Footer: React.FC = () => {
           </p>
         </div>
         <div>
-          <button className="mt-10 bg-[#daf700] hover:bg-yellow-200 rounded-4xl text-black px-6 py-3 transition duration-300 paragraph">
+          <button className="mt-10 bg-[#daf700] hover:bg-yellow-200 rounded-4xl text-black px-6 py-3 transition duration-300 hover:shadow-amber-200 hover:shadow-lg paragraph">
             Get Started
           </button>
         </div>

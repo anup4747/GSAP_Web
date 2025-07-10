@@ -12,13 +12,15 @@ gsap.registerPlugin(useGSAP);
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef<HTMLElement | null>(null);
+  const navLogo = useRef<HTMLElement | null>(null);
 
   useGSAP(() => {
+    const logoTween = gsap.fromTo(navLogo.current,{opacity:0} ,{opacity:1,duration:1.8, delay:1})
     if (isMenuOpen) {
       gsap.fromTo(
         menuRef.current,
-        { opacity: 0, y: -20 },
-        { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }
+        { opacity: 0 },
+        { opacity: 1, y: 0, duration: 1, ease: "power2.out",onComplete: () => {logoTween.kill()} }
       );
     }
   }, [isMenuOpen]);
@@ -28,9 +30,9 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="flex items-center justify-between p-4 text-black border-b-2 border-blue-200">
+    <header className="flex items-center justify-between p-4 text-black border-blue-200">
       <div className="text-3xl font-bold ml-10 cursor-pointer">
-        <Link to="/">AffiliateX</Link>
+        <Link ref={navLogo} to="/">AffiliateX</Link>
       </div>
 
       <div
