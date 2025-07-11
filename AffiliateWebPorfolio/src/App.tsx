@@ -1,5 +1,3 @@
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import ScrollingStrip from "./compontants/scrollingStrip";
@@ -11,12 +9,8 @@ import Publisher from "./pages/publisher";
 import Advertiser from "./pages/advertiser";
 import Contact from "./pages/contact";
 
-gsap.registerPlugin(useGSAP);
 
 function App() {
-  useGSAP(() => {
-    gsap.to(".box", { rotation: "+=360", duration: 3 });
-  }, []);
   return (
     <section className="">
       <ScrollingStrip/>
