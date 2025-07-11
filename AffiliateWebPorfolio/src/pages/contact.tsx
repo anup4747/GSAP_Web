@@ -44,7 +44,7 @@ const Contact: React.FC = () => {
   }, []);
   return (
     <section>
-      <div className="flex px-30 py-24 ">
+      <div className="flex px-30 py-18 ">
         <div className="w-1/2">
           <h1 ref={heading} className="leading-tight hero-font text-6xl ">Get in Touch</h1>
 
