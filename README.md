@@ -19,4 +19,4 @@ Node.js: Runtime environment for running the projects.
 
 ## Contributing
 
-Contributions are welcome! To contribute:
+Contributions are welcome! 
