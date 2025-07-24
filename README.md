@@ -16,3 +16,7 @@ TypeScript: For static typing and improved developer experience.
 Tailwind CSS: Utility-first CSS framework for styling.
 
 Node.js: Runtime environment for running the projects.
+
+## Contributing
+
+Contributions are welcome! To contribute:
